@@ -30,32 +30,30 @@
 		<img src="images/window-dogs.jpg" alt="Picture of Barkley and Gabby looking through window">
 			<p> Barkley and Gabby live at my mom's house and they love to chase squirrels.</p></div>
 	<div align="center"><h2>Nutrition</h2></div>	
-		<p> Each dog has different nutritonal needs, so we feed them the three different types of dog food listed below to ensure they stay healthy. In addition,the recomended daily allowance varies by weight according to the table provided by the manufactuer.</p>
+		<p> Each dog has different nutritonal needs, so we feed them the three different types of dog food listed below to ensure they stay healthy. In addition,the recomended daily allowance varies by weight according to the table provided by the manufactuer.<a href="tables/amounts.html">Click here for serving size by weight.</a></p>
 		<ul>
-			<li> Hill Country Science Mobility</li>
-			<li> Hill Country Science Puppy</li>
-			<li>Hill Country Science Senior</li>
+			<li> Hill's Science Diet Mobility</li>
+			<li> Hill's Science Diet Puppy</li>
+			<li>Hill's Science Diet Senior</li>
 		</ul>
 	
 		<p>They have brought my family alot of joy and I love them all very much. If you have love to give and would like to experience the joy that I have from my best friends, visit your local shelter. In San Antonio visit <a href="https://adltexas.org">Animal Defense Leauge of Texas</a></p> 
 	<br>
-		<script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "pic_bulboff.gif"
-  } else {
-    pic = "pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
+	<div align="center"
+	<hr>
+	<p style="font-size:25px;"> Click below to adopt a virtual dog!</p>
+	
+	<button type="button" onClick="MyFunction()">Adopt Me!</button>
+	
+	<p id="demo"><img src="images/sad-puppy.jpg" alt="Picture of a sad puppy."></p>
+	<script>
+function MyFunction() {
+	document.getElementById("demo").innerHTML = "Thank you!<br> Please visit your local shelter to adopt a <i>REAL</i> dog!";
+	document.getElementById("demo").style.fontSize="50px";
+	document.getElementById("demo").style.color="red";
 }
 </script>
-
-<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
-
-<p>
-<button type="button" onclick="light(1)">Light On</button>
-<button type="button" onclick="light(0)">Light Off</button>
-</p>	
+<br>
+	</div>
 	</body>
 </html>
